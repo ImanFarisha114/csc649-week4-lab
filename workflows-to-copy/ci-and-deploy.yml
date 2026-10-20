@@ -20,8 +20,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Run unit tests
         run: pytest
- 
-  deploy:
+
+deploy:
     needs: test
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
